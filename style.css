@@ -973,152 +973,125 @@ footer {
     color: #7e692c;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: row; /* Change to row for better mobile experience */
-        align-items: center;
-        border-radius: 0;
-        padding: 15px;
+/* Mobile Styles */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
     }
 
-    .navbar ul {
-        margin-top: 0;
-        flex-direction: row;
-        display: flex; /* Display navbar links in a row */
+    header {
+        text-align: center;
     }
 
-    .navbar li {
-        margin: 0 10px; /* Adjust margin for better spacing */
-    }
-
-    .top {
-        right: 15px; /* Adjust position for better visibility */
-        bottom: 15px; /* Ensure it stays above the bottom */
-    }
-
-    section,
-    .contact .info,
-    .contact form,
-    .get-published,
-    .ask-question,
-    .success-stories,
-    .review-process,
-    .feedbacks,
-    .blogs,
-    .social-services {
-        padding: 20px; /* Adjust padding for better spacing */
-    }
-
-    .service-card,
-    .category-card,
-    .offer-card,
-    .blog-card,
-    .feature,
-    .field {
-        flex: 0 0 100%;
-        margin-bottom: 15px; /* Adjust margin for better spacing */
-    }
-
-    .blogs .blog-cards {
-        gap: 15px;
-    }
-
-    .blog-card {
-        flex: 0 0 100%;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .service-card,
-    .category-card,
-    .offer-card,
-    .blog-card {
-        flex: 0 0 calc(50% - 20px);
-    }
-
-    .blogs .blog-cards {
-        gap: 15px;
-    }
-
-    .time-lines .deadline-features,
-    .pricing .pricing-features,
-    .fields .fields-list {
-        flex-direction: row; /* Adjust to row for better alignment */
-    }
-
-    .time-lines .deadline-features .feature,
-    .pricing .pricing-features .feature,
-    .fields .fields-list .field {
-        flex: 0 0 48%; /* Adjust flex value for better spacing */
-        margin-bottom: 15px;
-    }
-
-    .social-links {
-        flex-direction: row; /* Align social links horizontally */
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .navbar {
-        padding: 15px;
-    }
-
-    .logo-header img {
-        max-width: 120px;
+    .user img {
+        max-width: 100px;
+        border-radius: 50%;
     }
 
     .user h3 {
-        font-size: 16px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .navbar {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 80%;
+        background-color: #fff;
+        flex-direction: column;
+        z-index: 1000;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        color: #333;
     }
 
     .menu-toggle {
         display: block;
     }
 
-    .navbar ul {
+    .mobile-menu-toggle {
         display: none;
     }
 
-    .mobile-menu {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #333;
-        z-index: 1000;
+    .welcome-content,
+    .write-with-us-content,
+    .services-container,
+    .categories-container,
+    .offer-details,
+    .deadline-features,
+    .pricing-features,
+    .fields-list,
+    .publication-cards,
+    .deadline-features,
+    .pricing-features,
+    .fields-list,
+    .publication-cards,
+    .question-form,
+    .success-cards,
+    .review-steps,
+    .feedback-cards,
+    .blog-cards,
+    .social-links,
+    .content {
+        padding: 20px;
     }
 
-    .mobile-menu ul {
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
-
-    .mobile-menu li {
-        margin: 20px 0;
-    }
-
-    .mobile-menu a {
-        font-size: 18px;
+    .blog-card img {
+        max-width: 100%;
+        height: auto;
     }
 
     .top {
         bottom: 15px;
         right: 15px;
     }
+}
 
-    .service-card,
-    .category-card,
-    .offer-card,
-    .blog-card,
-    .feature,
-    .field {
-        padding: 15px;
+/* Tablet Styles */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar {
+        width: 70%;
     }
 }
+
+/* Laptop Styles */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .navbar {
+        width: 60%;
+    }
+}
+
+/* Large Desktop Styles */
+@media screen and (min-width: 1200px) {
+    .navbar {
+        display: flex;
+        width: auto;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+    }
+}
+
+
