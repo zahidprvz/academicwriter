@@ -313,7 +313,7 @@ form {
     line-height: 1.6;
 }
 
-/* Special Offer Styles */
+/* Updated Special Offer Styles */
 .special-offer {
     background-color: #ffffff;
     color: #333;
@@ -329,16 +329,18 @@ form {
 
 .offer-details {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 30px;
 }
 
 .offer-card {
-    flex: 0 0 30%;
+    flex: 0 0 calc(30% - 20px);
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -369,7 +371,7 @@ form {
 
 .btn-offer {
     background-color: #ffd700;
-    color: #000000;
+    color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -382,6 +384,8 @@ form {
 .btn:hover {
     background-color: #555;
 }
+
+
 
 /* Meet Your Deadlines Styles */
 .time-lines {
@@ -404,12 +408,13 @@ form {
 }
 
 .feature {
-    flex: 0 0 30%;
+    flex: 0 0 calc(30% - 20px);
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 20px;
     transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -462,12 +467,13 @@ form {
 }
 
 .feature {
-    flex: 0 0 30%;
+    flex: 0 0 calc(30% - 20px);
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin-bottom: 20px;
     transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -492,6 +498,8 @@ form {
     font-size: 14px;
     line-height: 1.6;
 }
+
+
 
 /* Expertise in Various Fields Styles */
 .fields {
@@ -521,7 +529,7 @@ form {
 }
 
 .field {
-    flex: 0 0 30%;
+    flex: 0 0 calc(30% - 20px);
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
@@ -973,24 +981,19 @@ footer {
     color: #7e692c;
 }
 
-/* Mobile Styles */
-@media screen and (max-width: 767px) {
-    body {
-        font-size: 16px;
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Change to row for better mobile experience */
+        align-items: center;
+        border-radius: 0;
+        padding: 15px;
     }
 
-    header {
-        text-align: center;
-    }
-
-    .user img {
-        max-width: 100px;
-        border-radius: 50%;
-    }
-
-    .user h3 {
-        font-size: 18px;
-        margin-top: 10px;
+    .navbar ul {
+        margin-top: 0;
+        flex-direction: row;
+        display: flex; /* Display navbar links in a row */
     }
 
     .navbar {
@@ -1091,7 +1094,43 @@ footer {
 
     .mobile-menu-toggle {
         display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #333;
+        z-index: 1000;
+    }
+
+    .mobile-menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .mobile-menu li {
+        margin: 20px 0;
+    }
+
+    .mobile-menu a {
+        font-size: 18px;
+    }
+
+    .top {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .service-card,
+    .category-card,
+    .offer-card,
+    .blog-card,
+    .feature,
+    .field {
+        padding: 15px;
     }
 }
-
-
