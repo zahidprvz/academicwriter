@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Writer - Services</title>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('RzkdNka2Z1Gf5hVrt');
+        })();
+
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                emailjs.sendForm('service_dnx139j', 'template_3v8i70f', this)
+                    .then(function (response) {
+                        alert('SUCCESS!', response.status, response.text);
+                        var message = document.createElement('div');
+                        message.classList.add('notification');
+                        message.classList.add('success');
+                        message.textContent = 'Your message has been sent successfully!';
+                        document.body.appendChild(message);
+                    }, function (error) {
+                        alert('FAILED...', error);
+                        var message = document.createElement('div');
+                        message.classList.add('notification');
+                        message.classList.add('error');
+                        message.textContent = 'An error occurred while sending your message. Please try again later.';
+                        document.body.appendChild(message);
+                    });
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- header section starts here -->
+    <header>
+        <div class="user">
+            <img src="Images/ProfilePic.jpg" alt="Profile Picture">
+            <h3 class="name">Academic Writer</h3>
+        </div>
+
+        <!-- Add the following lines inside your header -->
+        <div class="menu-toggle" id="menuToggle">&#9776;</div>
+        <input type="checkbox" class="menu-toggle" id="menuToggleCheckbox">
+        <label for="menuToggleCheckbox" class="mobile-menu-toggle">&#9776;</label>
+
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#write-with-us">Write with Us</a></li>
+                <li><a href="#services-offered">Services Offered</a></li>
+                <li><a href="#special-offer">Special Offer</a></li>
+                <li><a href="#time-lines">Time Lines</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#fields">Fields</a></li>
+                <li><a href="#get-published">Get Published</a></li>
+                <li><a href="#success-stories">Success Stories</a></li>
+                <li><a href="#review-process">Review Process</a></li>
+                <li><a href="#feedbacks">Feedbacks</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header section ends here -->
+
+
+    <!-- welcome section starts here -->
+    <section class="welcome" id="welcome">
+        <div class="welcome-content">
+            <h2>Welcome to the Academic Writing Hub!</h2>
+            <p>Embark on a journey of academic excellence with our dedicated writing community. At the Academic Writing
+                Hub, we go beyond conventional boundaries, offering a space where knowledge meets creativity.</p>
+            <p>Whether you're a seasoned academic or just starting your writing adventure, our platform is tailored to
+                meet your unique needs. Discover a collaborative environment that fosters growth, innovation, and
+                meaningful contributions to the academic realm.</p>
+            <p>Unleash your potential, connect with like-minded individuals, and explore a myriad of opportunities to
+                elevate your academic writing skills. Your journey towards impactful and insightful content begins right
+                here!</p>
+        </div>
+    </section>
+    <!-- welcome section ends here -->
+
+
+    <!-- write with us section starts here -->
+    <section class="write-with-us" id="write-with-us">
+        <div class="write-with-us-content">
+            <h2>Join Our Community of Writers</h2>
+            <p>Are you passionate about sharing knowledge and making a positive impact through your writing? Look no
+                further! At the Academic Writing Hub, we invite you to join our vibrant community of writers.</p>
+            <p>As a valued member, you'll have the opportunity to contribute your expertise, insights, and unique
+                perspectives to a global audience. Whether you're an academic professional, a seasoned writer, or just
+                starting your writing journey, we provide a supportive platform for growth and collaboration.</p>
+            <p>Unlock exciting opportunities, connect with fellow writers, and be part of a community that values
+                creativity and academic excellence. Your words have the power to inspire and educate—let's make a
+                difference together!</p>
+            <p>Ready to make your mark? Join us and let your voice resonate in the academic sphere!</p>
+            <!-- Social Media Links -->
+            <div class="social-media-links">
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- Link to Contact Page for Resumes -->
+            <p>Ready to take the next step? Submit your resume <a href="#contact">here</a>.</p>
+        </div>
+    </section>
+    <!-- write with us section ends here -->
+
+
+    <!-- Updated services offered section -->
+    <section class="services-offered" id="services-offered">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <!-- Thesis Writing -->
+            <div class="service-card">
+                <h3>Thesis Writing</h3>
+                <p>Our expert writers provide comprehensive thesis writing services, ensuring in-depth research and
+                    high-quality content for your academic success.</p>
+            </div>
+
+            <!-- Proposal Writing -->
+            <div class="service-card">
+                <h3>Proposal Writing</h3>
+                <p>We specialize in crafting compelling research proposals that effectively communicate your research
+                    ideas and set the foundation for your academic projects.</p>
+            </div>
+
+            <!-- Report Writing -->
+            <div class="service-card">
+                <h3>Report Writing</h3>
+                <p>Get professional report writing services that present your findings in a clear and structured manner.
+                    We ensure accuracy and adherence to academic standards.</p>
+            </div>
+
+            <!-- Synopsis Writing -->
+            <div class="service-card">
+                <h3>Synopsis Writing</h3>
+                <p>Our skilled writers create concise and impactful synopses that provide a snapshot of your research,
+                    captivating readers and setting the stage for further exploration.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Categories Section Starts Here -->
+    <section class="categories" id="categories">
+        <h2>Explore Categories</h2>
+        <p>Delve into a world of diverse and creative academic writing. Our platform covers a wide range of categories,
+            each offering unique insights and perspectives. Whatever your field of interest, we have expert writers
+            ready to craft compelling content for you.</p>
+
+        <!-- Categories Container -->
+        <div class="categories-container">
+            <!-- Science -->
+            <div class="category-card">
+                <h3>Science</h3>
+                <p>From groundbreaking research papers to informative articles, our writers specialize in delivering
+                    accurate and engaging content in various scientific disciplines.</p>
+            </div>
+
+            <!-- Philosophy -->
+            <div class="category-card">
+                <h3>Philosophy</h3>
+                <p>Explore the depths of philosophical thought with our expert writers. We provide insightful essays and
+                    thought-provoking content that delves into philosophical concepts and debates.</p>
+            </div>
+
+            <!-- Literature -->
+            <div class="category-card">
+                <h3>Literature</h3>
+                <p>Immerse yourself in the world of literature. Our writers are passionate about crafting literary
+                    pieces, including analyses, critiques, and creative works that celebrate the beauty of language and
+                    storytelling.</p>
+            </div>
+
+            <!-- Academic -->
+            <div class="category-card">
+                <h3>Academic</h3>
+                <p>Need assistance with academic writing across various disciplines? Our platform offers comprehensive
+                    support for academic projects, including essays, research papers, and more.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Special Offer Section Starts Here -->
+    <section class="special-offer" id="special-offer">
+        <h2>Exclusive Special Offer</h2>
+        <p>Embark on your academic journey with our exclusive special offer designed to make your experience even more
+            rewarding. At Academic Writer, we believe in providing exceptional value to our clients. Take advantage of
+            our limited-time offer and elevate your academic success!</p>
+
+        <!-- Special Offer Details -->
+        <div class="offer-details">
+            <!-- Offer 1 -->
+            <div class="offer-card">
+                <h3>First-Time User Discount</h3>
+                <p>New to Academic Writer? Enjoy a generous discount on your first order with us. Kickstart your
+                    academic excellence with quality writing services at an unbeatable price.</p>
+            </div>
+
+            <!-- Offer 2 -->
+            <div class="offer-card">
+                <h3>Refer a Friend Bonus</h3>
+                <p>Refer a friend to Academic Writer, and both of you will receive a special bonus on your next order.
+                    Share the benefits of our services with your peers and reap the rewards together.</p>
+            </div>
+
+            <!-- Offer 3 -->
+            <div class="offer-card">
+                <h3>Seasonal Discounts</h3>
+                <p>Keep an eye out for our seasonal discounts and promotions. Whether it's a holiday special or a
+                    back-to-school offer, we regularly provide opportunities for additional savings on our services.</p>
+            </div>
+        </div>
+
+        <!-- Call-to-Action -->
+        <div class="cta">
+            <p>Don't miss out on these incredible offers! Take the first step towards academic success today.</p>
+            <a href="#contact" class="btn-offer">Get Started</a>
+        </div>
+    </section>
+
+
+    <!-- time lines section starts here -->
+    <section class="time-lines" id="time-lines">
+        <h2>Meet Your Deadlines</h2>
+        <p>At Academic Writer, we understand the significance of meeting deadlines in your academic journey. We are
+            committed to ensuring timely delivery and providing a seamless experience throughout the process.</p>
+
+        <div class="deadline-features">
+            <div class="feature">
+                <i class="fas fa-clock"></i>
+                <h3>On-Time Delivery</h3>
+                <p>Our dedicated team works efficiently to deliver your academic projects within the specified
+                    deadlines.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-money-bill-wave"></i>
+                <h3>Money-Back Guarantee</h3>
+                <p>If we ever fall short on our commitment, we offer a partial refund of your service fee as a gesture
+                    of accountability.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-comments"></i>
+                <h3>24/7 Customer Support</h3>
+                <p>We prioritize your concerns. Our customer support team is available around the clock to address your
+                    queries and provide assistance.</p>
+            </div>
+        </div>
+    </section>
+    <!-- time lines section ends here -->
+
+
+    <!-- pricing section starts here -->
+    <section class="pricing" id="pricing">
+        <h2>Transparent Pricing</h2>
+        <p>At Academic Writer, we believe in transparent pricing to ensure our clients feel confident and informed about
+            their investment. Here's what you can expect from our pricing model:</p>
+
+        <div class="pricing-features">
+            <div class="feature">
+                <i class="fas fa-handshake"></i>
+                <h3>No Hidden Fees</h3>
+                <p>We guarantee transparency in our pricing. No hidden charges will be added to your service fee. What
+                    you see is what you pay.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-lock"></i>
+                <h3>Secure Transactions</h3>
+                <p>Your financial security is our priority. We use 100% authentic and safe payment methods to ensure
+                    your transactions are secure and reliable.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Trustworthy Service</h3>
+                <p>Our commitment to transparency extends to the quality of our service. You can trust us to deliver
+                    top-notch academic assistance with integrity.</p>
+            </div>
+        </div>
+    </section>
+    <!-- pricing section ends here -->
+
+
+    <!-- fields section starts here -->
+    <section class="fields" id="fields">
+        <h2>Expertise in Various Fields</h2>
+        <p>Our team of dedicated writers comes from diverse backgrounds, bringing expertise in a wide range of fields.
+            Whether you need assistance in Biology, Literature, or any other discipline, we've got you covered.</p>
+
+        <div class="fields-list">
+            <div class="field">
+                <i class="fas fa-flask"></i>
+                <h3>Science</h3>
+                <p>Our Science experts cover Physics, Chemistry, and more. Get accurate and well-researched content for
+                    your scientific projects.</p>
+            </div>
+            <div class="field">
+                <i class="fas fa-gavel"></i>
+                <h3>Law</h3>
+                <p>Legal research, case studies, and more. Our Law specialists are here to assist with any legal writing
+                    needs.</p>
+            </div>
+            <div class="field">
+                <i class="fas fa-chart-bar"></i>
+                <h3>Business</h3>
+                <p>From marketing strategies to financial analysis, our Business writers offer expertise in various
+                    business-related fields.</p>
+            </div>
+            <div class="field">
+                <i class="fas fa-code"></i>
+                <h3>Technology</h3>
+                <p>Stay up-to-date with the latest in technology. Our writers can provide insightful content on various
+                    tech-related topics.</p>
+            </div>
+            <!-- Add more fields as needed -->
+        </div>
+    </section>
+    <!-- fields section ends here -->
+
+
+    <!-- get published section starts here -->
+    <section class="get-published" id="get-published">
+        <h2>Get Published</h2>
+        <p>Embark on a journey to share your knowledge and insights with the world. At our platform, we provide you with
+            a seamless experience to get your work published and make a meaningful impact on the academic community.</p>
+
+        <div class="publication-cards">
+            <div class="publication-card">
+                <h3>Opportunities Await</h3>
+                <p>Explore a myriad of opportunities to showcase your expertise. From journals to collaborative
+                    projects, find the perfect avenue for your work.</p>
+            </div>
+
+            <div class="publication-card">
+                <h3>Contribute to Discussions</h3>
+                <p>Join vibrant academic discussions by contributing your work. Your voice matters, and through
+                    publication, you can engage with scholars worldwide.</p>
+            </div>
+        </div>
+    </section>
+    <!-- get published section ends here -->
+
+
+    <!-- ask question section starts here -->
+    <section class="ask-question" id="ask-question">
+        <h2>Have a Question?</h2>
+        <p>Our support team is here to assist you. Whether you need clarification on a topic or guidance on using our
+            platform, feel free to ask anything. Your inquiries are valuable to us!</p>
+
+        <div class="question-form">
+            <label for="question">Ask Your Question:</label>
+            <textarea id="question" class="box message" placeholder="Type your question here..."></textarea>
+            <button class="btn">Submit</button>
+        </div>
+    </section>
+    <!-- ask question section ends here -->
+
+
+    <!-- success stories section starts here -->
+    <section class="success-stories" id="success-stories">
+        <h2>Success Stories</h2>
+        <p>Discover the inspiring journeys of our writers and clients. Their success stories highlight the positive
+            impact our platform has made on academic endeavors. Your success story could be next!</p>
+
+        <div class="success-cards">
+            <div class="success-card">
+                <h3>From Manuscript to Publication</h3>
+                <p>Explore how a researcher turned their manuscript into a published work, gaining recognition in their
+                    field and contributing to academic discourse.</p>
+            </div>
+
+            <div class="success-card">
+                <h3>Transformative Learning Experience</h3>
+                <p>Read about a student's transformative learning experience through engaging with our platform, leading
+                    to academic achievements and personal growth.</p>
+            </div>
+        </div>
+    </section>
+    <!-- success stories section ends here -->
+
+
+    <!-- review process section starts here -->
+    <section class="review-process" id="review-process">
+        <h2>Our Review Process</h2>
+        <p>At our platform, quality assurance is paramount. Learn about our meticulous review process that ensures every
+            piece of work meets the highest standards of excellence before publication.</p>
+
+        <div class="review-steps">
+            <div class="review-step">
+                <i class="fas fa-file-alt"></i>
+                <h3>Submission</h3>
+                <p>Submit your work through our user-friendly platform, providing all necessary details and files for
+                    the review process.</p>
+            </div>
+
+            <div class="review-step">
+                <i class="fas fa-search"></i>
+                <h3>Evaluation</h3>
+                <p>Our expert reviewers thoroughly evaluate each submission, considering its academic merit,
+                    originality, and adherence to guidelines.</p>
+            </div>
+
+            <div class="review-step">
+                <i class="fas fa-check-circle"></i>
+                <h3>Approval</h3>
+                <p>Upon successful evaluation, your work is approved for publication, signifying its contribution to
+                    academic knowledge.</p>
+            </div>
+        </div>
+    </section>
+    <!-- review process section ends here -->
+
+
+    <!-- feedbacks section starts here -->
+    <section class="feedbacks" id="feedbacks">
+        <h2>Client Feedback</h2>
+        <p>Discover what our clients have to say about their experience with our services. We value feedback and
+            continuously strive to improve based on your valuable suggestions.</p>
+
+        <div class="feedback-cards">
+            <div class="feedback-card">
+                <h3>Exceptional Service</h3>
+                <p>"The service provided by the platform is exceptional. From submission to publication, the process was
+                    smooth and efficient."</p>
+                <span>- John Doe, Researcher</span>
+            </div>
+
+            <div class="feedback-card">
+                <h3>Responsive Support</h3>
+                <p>"The support team is highly responsive and helpful. They addressed my queries promptly and provided
+                    clear guidance."</p>
+                <span>- Jane Smith, Student</span>
+            </div>
+        </div>
+    </section>
+    <!-- feedbacks section ends here -->
+
+
+    <!-- blogs section starts here -->
+    <section class="blogs" id="blogs">
+        <h2>Explore Our Blogs</h2>
+        <p>Dive into a treasure trove of insightful articles, tips, and discussions on various academic topics. Our blog
+            section is designed to keep you informed, inspired, and engaged with the latest in academia.</p>
+
+        <div class="blog-cards">
+            <div class="blog-card">
+                <img src="blog1.jpg" alt="Blog 1 Image">
+                <h3>The Art of Research Writing</h3>
+                <p>Uncover the nuances of effective research writing, from crafting compelling abstracts to mastering
+                    citation styles. Our experts share valuable insights to enhance your scholarly pursuits.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="blog-card">
+                <img src="blog2.jpg" alt="Blog 2 Image">
+                <h3>Strategies for Literature Review</h3>
+                <p>Navigate the intricate landscape of literature reviews with proven strategies and expert insights.
+                    Learn how to conduct a comprehensive literature review that forms the foundation of your research.
+                </p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+
+            <div class="blog-card">
+                <img src="blog3.jpg" alt="Blog 3 Image">
+                <h3>The Impact of Technology in Education</h3>
+                <p>Explore the transformative effects of technology on education. Our blog discusses innovative
+                    approaches, tools, and trends shaping the future of learning and academic research.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- blogs section ends here -->
+
+    <!-- blogs section ends here -->
+
+
+    <!-- social services section starts here -->
+    <section class="social-services" id="social-services">
+        <h2>Connect with Us on Social Media</h2>
+        <p>Stay updated with our latest offerings, tips, and community engagement. Join us on social media, be part of
+            the conversation, and connect with a diverse community of academic enthusiasts.</p>
+
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
+    <!-- social services section ends here -->
+
+
+    <!-- contact section starts here -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="row">
+            <div class="content">
+                <h3 class="title">Contact Us</h3>
+
+                <br><br>
+
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" class="box" required>
+                    <input type="email" name="email" placeholder="Your Email" class="box" required>
+                    <input type="text" name="subject" placeholder="Subject" class="box" required>
+                    <textarea name="message" cols="30" rows="10" class="box message" placeholder="Your Message"
+                        required></textarea>
+                    <button type="submit" class="form-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- contact section ends here -->
+
+    <!-- scroll top button -->
+    <a href="#" class="top">
+        <img src="Images/pic6.png" alt="" style="height: 50px; width: 50px">
+    </a>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="Images/ProfilePic.jpg" alt="Footer Logo" style="height: 60px; width: auto;">
+                    <h3>Academic Writer</h3>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: academicwriter@example.com</p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect with Us</h3>
+                    <ul>
+                        <li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript files Links Here -->
+    <!-- jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- custom js file link -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
