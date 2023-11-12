@@ -1,4 +1,3 @@
-```markdown
 # Academic Writing Services Website
 
 This is a sample website for academic writing services. The website is designed to showcase services, expertise, success stories, and more. It includes various sections such as services, categories, special offers, blog, and social media connections.
@@ -21,7 +20,7 @@ This is a sample website for academic writing services. The website is designed 
 
 ## Demo
 
-You can see a live demo of the website [here](https://zpmughal.github.io/academicwriter/).
+You can see a live demo of the website [here](https://zahidparviz.github.io/academicwriter/).
 
 ## Getting Started
 
@@ -30,7 +29,7 @@ To get a copy of this project and run it on your local machine, follow these ste
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/zpmughal/academicwriting.git
+git clone https://github.com/zahidparviz/academicwriting.git
 ```
 
 2. Open the project folder:
@@ -58,4 +57,3 @@ If you'd like to contribute to this project, please follow these steps:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
