@@ -20,7 +20,7 @@ This is a sample website for academic writing services. The website is designed 
 
 ## Demo
 
-You can see a live demo of the website [here](https://zahidparviz.github.io/academicwriter/).
+You can see a live demo of the website [here](https://zahidprvz.github.io/academicwriter/).
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ To get a copy of this project and run it on your local machine, follow these ste
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/zahidparviz/academicwriting.git
+git clone https://github.com/zahidprvz/academicwriting.git
 ```
 
 2. Open the project folder:
